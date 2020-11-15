@@ -6,5 +6,5 @@ principles.
 ## The App
 
 <p align="center">
-<img src="https://i.imgur.com/TO2cAfS.png" width="300" height="500" />
+<img src="https://i.imgur.com/TO2cAfS.png" width="300" height="700" />
 </p>
