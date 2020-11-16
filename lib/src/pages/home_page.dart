@@ -1,4 +1,5 @@
 import 'package:currency_converter/src/components/currency_box.dart';
+import 'package:currency_converter/src/controllers/app_controller.dart';
 import 'package:currency_converter/src/controllers/home_controller.dart';
 import 'package:flutter/material.dart';
 
@@ -22,10 +23,21 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        elevation: 0,
+        backgroundColor: Colors.transparent,
+        actions: [
+          Switch(
+            value: AppController.instance.isDarkTheme,
+            onChanged: (value) {
+              AppController.instance.changeTheme();
+            },
+          ),
+        ],
+      ),
       body: Center(
         child: Padding(
-          padding:
-              const EdgeInsets.only(top: 80, bottom: 20, left: 25, right: 25),
+          padding: const EdgeInsets.only(bottom: 20, left: 25, right: 25),
           child: SingleChildScrollView(
             child: Column(
               children: [
