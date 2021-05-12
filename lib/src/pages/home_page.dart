@@ -75,7 +75,7 @@ class _HomePageState extends State<HomePage> {
                     onPressed: () {
                       homeController.convert();
                     },
-                    child: Text("Convert"),
+                    child: Text("Converter"),
                   ),
                 ),
               ],
