@@ -23,7 +23,7 @@ class CurrencyBox extends StatelessWidget {
               value: selectedItem,
               isExpanded: true,
               underline: Container(
-                height: 1,
+                height: 2,
                 color: Colors.amber,
               ),
               items: items.map((e) => DropdownMenuItem(value: e, child: Text(e.name))).toList(),
